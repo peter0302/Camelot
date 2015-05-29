@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B4D47CA-E14C-4790-B1DB-89FDDCA7AB9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Camelot.Win32</RootNamespace>
+    <AssemblyName>Camelot.Win32</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseIntermediateOutputPath>..\..\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;__WIN32__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE;__WIN32__</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Source\Core\Animatable.cs">
+      <Link>Core\Animatable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\AppButton.cs">
+      <Link>Core\AppButton.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\AppButtonDefinitions.cs">
+      <Link>Core\AppButtonDefinitions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Binding.cs">
+      <Link>Core\Binding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\BindingBase.cs">
+      <Link>Core\BindingBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\BindingExpression.cs">
+      <Link>Core\BindingExpression.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\BindingExpressionBase.cs">
+      <Link>Core\BindingExpressionBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\BindingGroup.cs">
+      <Link>Core\BindingGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\BindingOperations.cs">
+      <Link>Core\BindingOperations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Border.cs">
+      <Link>Core\Border.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Brush.cs">
+      <Link>Core\Brush.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Button.cs">
+      <Link>Core\Button.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ButtonBase.cs">
+      <Link>Core\ButtonBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Canvas.cs">
+      <Link>Core\Canvas.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Color.cs">
+      <Link>Core\Color.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Colors.cs">
+      <Link>Core\Colors.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\CommonEvents.cs">
+      <Link>Core\CommonEvents.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\CompositeTransform.cs">
+      <Link>Core\CompositeTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ContentControl.cs">
+      <Link>Core\ContentControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ContentPresenter.cs">
+      <Link>Core\ContentPresenter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Control.cs">
+      <Link>Core\Control.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ControlTemplate.cs">
+      <Link>Core\ControlTemplate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DataTemplate.cs">
+      <Link>Core\DataTemplate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DataTemplateSelector.cs">
+      <Link>Core\DataTemplateSelector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Decorator.cs">
+      <Link>Core\Decorator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DelegateCommand.cs">
+      <Link>Core\DelegateCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DependencyObject.cs">
+      <Link>Core\DependencyObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DependencyObjectCollection.cs">
+      <Link>Core\DependencyObjectCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DependencyProperty.cs">
+      <Link>Core\DependencyProperty.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\DependencyPropertyDescriptor.cs">
+      <Link>Core\DependencyPropertyDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\EventsService.cs">
+      <Link>Core\EventsService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\FontFamily.cs">
+      <Link>Core\FontFamily.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Foundation.cs">
+      <Link>Core\Foundation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\FrameworkElement.cs">
+      <Link>Core\FrameworkElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\FrameworkElementFactory.cs">
+      <Link>Core\FrameworkElementFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\FrameworkPropertyMetadata.cs">
+      <Link>Core\FrameworkPropertyMetadata.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\FrameworkTemplate.cs">
+      <Link>Core\FrameworkTemplate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Freezable.cs">
+      <Link>Core\Freezable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\GeneralTransform.cs">
+      <Link>Core\GeneralTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\GradientBrush.cs">
+      <Link>Core\GradientBrush.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\GradientStopCollection.cs">
+      <Link>Core\GradientStopCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Grid.cs">
+      <Link>Core\Grid.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\GridSupport.cs">
+      <Link>Core\GridSupport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Image.cs">
+      <Link>Core\Image.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\InputEventArgs.cs">
+      <Link>Core\InputEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ItemContainerGenerator.cs">
+      <Link>Core\ItemContainerGenerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ItemsControl.cs">
+      <Link>Core\ItemsControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ItemsPanelTemplate.cs">
+      <Link>Core\ItemsPanelTemplate.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ItemsPresenter.cs">
+      <Link>Core\ItemsPresenter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\IValueConverter.cs">
+      <Link>Core\IValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Keyboard.cs">
+      <Link>Core\Keyboard.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\LayoutUpdateThread.cs">
+      <Link>Core\LayoutUpdateThread.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\LinearGradientBrush.cs">
+      <Link>Core\LinearGradientBrush.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ListBox.cs">
+      <Link>Core\ListBox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ManipulationEventArgs.cs">
+      <Link>Core\ManipulationEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ManipulationStructs.cs">
+      <Link>Core\ManipulationStructs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\MarkupExtension.cs">
+      <Link>Core\MarkupExtension.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Matrix.cs">
+      <Link>Core\Matrix.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Panel.cs">
+      <Link>Core\Panel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Platform.cs">
+      <Link>Core\Platform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\PointerDeviceType.cs">
+      <Link>Core\PointerDeviceType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Presenter.cs">
+      <Link>Core\Presenter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\PropertyPath.cs">
+      <Link>Core\PropertyPath.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\RelativeSource.cs">
+      <Link>Core\RelativeSource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ResourceDictionary.cs">
+      <Link>Core\ResourceDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\RoutedEvent.cs">
+      <Link>Core\RoutedEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ScrollBar.cs">
+      <Link>Core\ScrollBar.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ScrollContentPresenter.cs">
+      <Link>Core\ScrollContentPresenter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ScrollViewer.cs">
+      <Link>Core\ScrollViewer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Selector.cs">
+      <Link>Core\Selector.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Setter.cs">
+      <Link>Core\Setter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Shapes.cs">
+      <Link>Core\Shapes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\SolidColorBrush.cs">
+      <Link>Core\SolidColorBrush.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\StackPanel.cs">
+      <Link>Core\StackPanel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\StaticResource.cs">
+      <Link>Core\StaticResource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\StringExtensions.cs">
+      <Link>Core\StringExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Style.cs">
+      <Link>Core\Style.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\TemplateBinding.cs">
+      <Link>Core\TemplateBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\TemplateContent.cs">
+      <Link>Core\TemplateContent.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\TextBlock.cs">
+      <Link>Core\TextBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Thumb.cs">
+      <Link>Core\Thumb.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Track.cs">
+      <Link>Core\Track.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Transform.cs">
+      <Link>Core\Transform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\TranslateTransform.cs">
+      <Link>Core\TranslateTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\Trigger.cs">
+      <Link>Core\Trigger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\UIElement.cs">
+      <Link>Core\UIElement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\UIElementCollection.cs">
+      <Link>Core\UIElementCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\UniversalPropertyKey.cs">
+      <Link>Core\UniversalPropertyKey.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\UserControl.cs">
+      <Link>Core\UserControl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\ValidationError.cs">
+      <Link>Core\ValidationError.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\VisualTreeEnumerator.cs">
+      <Link>Core\VisualTreeEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\XamlAttributes.cs">
+      <Link>Core\XamlAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\XamlDeferringLoader.cs">
+      <Link>Core\XamlDeferringLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\Core\XamlReader.cs">
+      <Link>Core\XamlReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Source\PlatformShared\XamlReader.cs">
+      <Link>Platform\XamlReader.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
